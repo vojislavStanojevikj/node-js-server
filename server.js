@@ -57,6 +57,14 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects Page',
+        pageMessage: 'projects page..',
+        projectPortfolio: 'This will show all projects soon..'
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.send({errorMessage: 'Requested resource not found!'});
 });
