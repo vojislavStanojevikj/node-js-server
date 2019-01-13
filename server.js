@@ -3,7 +3,7 @@ const hbs = require('hbs');
 const fs = require('fs');
 const pJSON = require('./package');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
